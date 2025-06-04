@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 export default {
 	darkMode: ["class"],
@@ -44,6 +45,10 @@ export default {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
+        accent2: { /* Added for Doraemon Yellow as general accent */
+					DEFAULT: 'hsl(var(--accent2))',
+					foreground: 'hsl(var(--accent2-foreground))'
+        },
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'
@@ -64,10 +69,13 @@ export default {
 				}
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				lg: 'var(--radius)', /* e.g., 0.75rem */
+				md: 'calc(var(--radius) - 0.125rem)', /* e.g., 0.75rem - 2px = 0.625rem (10px) */
+				sm: 'calc(var(--radius) - 0.25rem)'  /* e.g., 0.75rem - 4px = 0.5rem (8px) */
 			},
+      fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans],
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
