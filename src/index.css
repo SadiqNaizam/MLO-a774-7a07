@@ -4,89 +4,95 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Doraemon Theme - Light Mode */
+    --background: 0 0% 100%; /* White */
+    --foreground: 220 25% 25%; /* Cool Dark Gray */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 98%; /* Off-white (Doraemon's pocket) */
+    --card-foreground: 220 25% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 220 25% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 197 100% 46%; /* Doraemon Blue */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 20% 94%; /* Very light cool gray */
+    --secondary-foreground: 220 25% 45%; /* Medium cool gray */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 20% 96%; /* Even lighter cool gray */
+    --muted-foreground: 220 20% 65%; /* Light gray text */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 197 80% 60%; /* Softer Doraemon Blue */
+    --accent-foreground: 0 0% 100%; /* White */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --accent2: 56 100% 50%; /* Doraemon Yellow */
+    --accent2-foreground: 56 100% 15%; /* Dark Brown/Yellow for text on yellow */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 349 100% 42%; /* Doraemon Red */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --radius: 0.5rem;
+    --border: 220 20% 90%; /* Light cool gray */
+    --input: 220 20% 90%;
+    --ring: 56 100% 50%; /* Doraemon Yellow for focus */
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0.75rem; /* 12px */
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --font-sans: "Nunito", "Quicksand", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar - Light Mode */
+    --sidebar-background: 197 10% 97%; /* Very light Doraemon blueish */
+    --sidebar-foreground: 197 60% 25%; /* Dark saturated Doraemon blue text */
+    --sidebar-primary: 197 100% 46%;   /* Doraemon Blue */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 349 100% 42%;    /* Doraemon Red */
+    --sidebar-accent-foreground: 0 0% 100%; /* White */
+    --sidebar-border: 197 20% 90%;    /* Light desaturated blue */
+    --sidebar-ring: 56 100% 50%;       /* Doraemon Yellow */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Doraemon Theme - Dark Mode */
+    --background: 220 30% 12%; /* Deep cool blue/charcoal */
+    --foreground: 220 15% 90%; /* Light cool gray */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 30% 18%;
+    --card-foreground: 220 15% 90%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 30% 18%;
+    --popover-foreground: 220 15% 90%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 197 100% 50%; /* Slightly lighter Doraemon Blue for dark mode */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 30% 22%;
+    --secondary-foreground: 220 15% 80%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 30% 25%;
+    --muted-foreground: 220 15% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 197 70% 55%; /* Adjusted Doraemon Blue for dark mode */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --accent2: 56 100% 50%; /* Doraemon Yellow */
+    --accent2-foreground: 56 100% 15%; /* Dark Brown/Yellow for text on yellow */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive: 349 100% 50%; /* Slightly lighter Doraemon Red for dark mode */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 25% 30%;
+    --input: 220 25% 30%;
+    --ring: 56 100% 50%; /* Doraemon Yellow for focus */
+
+    /* Sidebar - Dark Mode */
+    --sidebar-background: 197 50% 8%;  /* Very dark Doraemon blue */
+    --sidebar-foreground: 197 30% 85%; /* Light desaturated Doraemon blue text */
+    --sidebar-primary: 197 100% 50%;   /* Doraemon Blue (adjusted for dark) */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 349 100% 50%;    /* Doraemon Red (adjusted for dark) */
+    --sidebar-accent-foreground: 0 0% 100%; /* White */
+    --sidebar-border: 197 40% 20%;    /* Dark desaturated blue */
+    --sidebar-ring: 56 100% 50%;       /* Doraemon Yellow */
   }
 }
 
@@ -97,5 +103,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
   }
 }
